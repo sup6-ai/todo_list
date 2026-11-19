@@ -62,3 +62,5 @@ def delete_todo(todo_id: int):
     if not functions.delete_todo(todo_id=todo_id):
         raise HTTPException(status_code=404, detail="Todo not found")
     return {"message": "Todo deleted"}
+
+
